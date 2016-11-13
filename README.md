@@ -12,6 +12,7 @@ https://github.com/noeljt/websys
 
 Bonus - github hosting:
 https://noeljt.github.io
+*Please note that github hosting does not support PHP files, so some lab links won't work properly
 =======================================================================
 Part 2 - Jazz it up:
 =======================================================================
