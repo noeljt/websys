@@ -1,0 +1,83 @@
+===Database websyslab8
+
+== Table structure for table courses
+
+|------
+|Column|Type|Null|Default
+|------
+|//**crn**//|int(11)|No|
+|prefix|varchar(4)|No|
+|number|smallint(4)|No|
+|title|varchar(255)|No|
+|section|smallint(2)|No|
+|year|smallint(4)|No|
+== Dumping data for table courses
+
+|1|CSCI|1000|CS1|1|2014
+|2|CSCI|2000|DS|2|2015
+|3|CSCI|4000|OS|1|2015
+|4|CSCI|4100|AI|2|2017
+|5|CSCI|4200|OO|3|2016
+|6|ITWS|1000|Intro|1|2015
+|7|ITWS|2000|Society|2|2015
+|8|ITWS|4000|HCI|1|2016
+|9|ITWS|4100|Web|2|2016
+|10|ITWS|4200|Capstone|3|2017
+== Table structure for table grades
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|crn|int(11)|No|
+|rin|int(11)|No|
+|grade|int(3)|No|
+== Dumping data for table grades
+
+|1|1|1|100
+|2|1|2|100
+|3|2|3|87
+|4|2|4|98
+|5|3|5|79
+|6|3|6|83
+|7|4|7|94
+|8|4|8|96
+|9|5|8|95
+|10|5|10|88
+|11|6|1|70
+|12|6|2|82
+|13|7|3|89
+|14|7|4|96
+|15|8|5|98
+|16|8|6|100
+|17|9|7|2
+|18|9|9|1
+|19|10|9|1
+|20|10|10|2
+== Table structure for table students
+
+|------
+|Column|Type|Null|Default
+|------
+|//**rin**//|int(9)|No|
+|rcisID|char(7)|No|
+|first name|varchar(100)|No|
+|last name|varchar(100)|No|
+|alias|varchar(100)|No|
+|phone|int(10)|No|
+|street|varchar(100)|No|
+|city|varchar(100)|No|
+|st|varchar(100)|No|
+|zip|int(6)|No|
+== Dumping data for table students
+
+|1|noelj|Joseph|Noel|Joe|2038150348|Highland Ave|Troy|NY|12180
+|2|kaplaz|Zackary|Kaplan|Zack|1234567891|15th Street|Troy|NY|12180
+|3|dinicc|Christopher|DiNicola|Chris|2147483647|Garbage Ave|Burlington|CT|6410
+|4|markuc|Christopher|Markum|CJ|2038750348|Small Circle|Troy|NY|12180
+|5|prudep|Dominick|Prudente|Dom|2147483647|Paine Way|Troy|NY|12180
+|6|eatonj|Jack|Eaton|Dick|683946351|Reason Way|Albany|NY|12300
+|7|morscs|Sarah|Morsches| |2032729831|Tashua Pkwy|Trumbull|CT|6611
+|8|xul|Lu|Xu| |2147483647|MITR Ave|Troy|NY|12180
+|9|trumpd|Donald|Trump|The Don|2147483647|Somewhere|Washington DC|MA|1010
+|10|clintc|Hillary|Clinton|Her|6660666|Somewhere Else|Washington DC|MA|10101

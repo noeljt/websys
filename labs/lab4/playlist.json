@@ -1,0 +1,90 @@
+[
+	{
+		"track":	 "Track Name",
+		"artist":	 "Artist",
+		"album":	 "Album",
+		"albumLink": "",
+		"albumArt":	 "Album Cover",
+		"release":	 "Release Date",
+		"genres":[
+			"Genre"
+		]
+	},
+	{
+		"track":	 "This is Halloween",
+		"artist":	 "Marilyn Manson",
+		"album":	 "Nightmare Revisited",
+		"albumLink": "http://www.allmusic.com/album/nightmare-revisited-mw0000798327",
+		"albumArt":	 "http://cps-static.rovicorp.com/3/JPG_500/MI0001/790/MI0001790692.jpg?partner=allrovi.com",
+		"release":	 "September 30, 2008",
+		"genres":[
+			"Disney", 
+			"Rock", 
+			"Soundtrack"
+		]
+	},
+	{
+		"track":	 "Heads Will Roll",
+		"artist":	 "Yeah Yeah Yeahs",
+		"album":	 "It's Blitz!",
+		"albumLink": "http://www.allmusic.com/album/its-blitz%21-mw0000813137",
+		"albumArt":	 "http://cps-static.rovicorp.com/3/JPG_500/MI0000/874/MI0000874209.jpg?partner=allrovi.com",
+		"release":	 "June 29, 2009",
+		"genres":[
+			"Alternative Dance", 
+			"Dance-Punk", 
+			"New Wave", 
+			"Synthpop"
+		]
+	},
+	{
+		"track": 	 "Riptide",
+		"artist": 	 "Vance Joy",
+		"album": 	 "Dream Your Life Away",
+		"albumLink": "http://www.allmusic.com/album/dream-your-life-away-mw0002701765",
+		"albumArt":  "http://cps-static.rovicorp.com/3/JPG_500/MI0003/769/MI0003769708.jpg?partner=allrovi.com",
+		"release": 	 "May 21, 2013",
+		"genres":[
+			"Indie Folk",
+			"Indie Pop"
+		]
+	},
+	{
+		"track": 	 "Stressed Out",
+		"artist": 	 "Twenty One Pilots",
+		"album": 	 "Blurryface",
+		"albumLink": "http://www.allmusic.com/album/blurryface-mw0002837924",
+		"albumArt":  "http://cps-static.rovicorp.com/3/JPG_500/MI0003/853/MI0003853980.jpg?partner=allrovi.com",
+		"release": 	 "April 28, 2015",
+		"genres":[
+			"Rap",
+			"Rock"
+		]
+	},
+	{
+		"track": 	 "You're Gonna Go Far, Kid",
+		"artist": 	 "The Offspring",
+		"album": 	 "Rise and Fall, Rage and Grace",
+		"albumLink": "http://www.allmusic.com/album/rise-and-fall-rage-and-grace-mw0000787599",
+		"albumArt":  "http://hwcdn.allmusic.com/release-covers/500/0000/983/0000983935.jpg",
+		"release": 	 "September 4, 2008",
+		"genres":[
+			"Punk",
+			"Rock"
+		]
+	},
+	{
+		"track": "I Will Wait",
+		"artist": "Mumford and Sons",
+		"album": "Babel",
+		"albumLink": "http://www.allmusic.com/album/babel-mw0002409657",
+		"albumArt": "http://cps-static.rovicorp.com/3/JPG_500/MI0003/447/MI0003447070.jpg?partner=allrovi.com",
+		"release": "August 7, 2012",
+		"genres":[
+			"Bluegrass",
+			"Country",
+			"Folk Rock",
+			"Indie Folk"
+		]
+	}		
+]

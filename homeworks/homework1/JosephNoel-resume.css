@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-variant: small-caps;
+  height: 1em;
+  float: left;
+  font-size: 300%;
+  width: 84%;
+  border-bottom: solid black 1px;
+}
+h2 {
+  float: left;
+  clear: both;
+  width: 1000px;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  border-bottom: 2px solid black;
+}
+h3 {
+  float: left;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+img {
+  float: right;
+}
+#contactInfo {
+  padding: 10px 0 0 0;
+  width: 698px;
+  margin: 0;
+  white-space: nowrap;
+  float: right;
+}
+#contactInfo li {
+  margin: 0 0.25em 0 0.25em;
+}
+.content {
+  width: 850px;
+  padding: 10px 0 10px 0;
+  float: right;
+}
+.line_1 {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.line_2 {
+  float: left;
+  clear: left;
+  font-size: ;
+  margin: 0;
+  padding: 0;
+}
+.date {
+  float: right;
+  clear: right;
+  margin: 0;
+  padding: 0;
+}
+.page {
+  width: 1000px;
+  min-height: 29.7cm;
+  margin: 1cm auto;
+  background: white;
+  padding: 20px 50px;
+}
+.section {
+  padding: 20px 0 0 0;
+  float: left;
+  clear: left;
+}
+ul.list {
+  width: 850px;
+  padding: 0 0 0 15px;
+  float: left;
+  clear:left;
+  margin: 0 20px 0 0;
+}
+ul.compact {
+  float: left;
+  padding-left: 15px;
+  margin: 0 20px 0 0;
+  width: 248px;
+}

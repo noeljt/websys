@@ -1,0 +1,26 @@
+Part 1:
+
+My semantic markup involves using classes and IDs to give the elements meaning.
+Everything is contained within a "playlist" unordered list, which containes list items that hold unordered lists of the class "song".
+Each of these song list items contains an unordered list of class "songInfo".
+These songInfo lists contain list items broken down into classes by the information presented, ie a list item of class "trackName" for the track name.
+Additionally, the last item for each songInfo list is a list of the genres.
+
+I believe this structure breaks down the playlist into obvious semantic pieces, easy to stylize in css due to the readability and logical structure of the semantic markup.
+
+Part 2:
+
+Kept to the same structure as my html file, although used all caps for naming elements (ie. TRACKNAME instead of trackName) due to what I saw in W3C examples.
+As such, my XML is as semantically correct as my HTML markup.
+
+One thought that occured to me that I for some reason though was more XML would be to group each category together (such as all the tracknames in one collection, all the artists in another), although making sure the proper information remained together based on solely their position in the collection is iffy in my opinion.
+
+
+Part 3:
+
+My markup changed to accommodate the column headers and end of list items, by adding a list item with an id of "songInfoColumns" and "end" respectively.  By far the hardest part was getting the lists to stretch and fill evenly horizontally, which I accomplished using floats.
+
+Part 4:
+
+Moved ALBUMCOVER and the contained ALBUMART to the end of each SONG section to accommodate one of the stylistic requirements.
+The image for It's Blitz! album cover was functional, but when I took the screenshot there was an issue and it wasn't displayed. It isn't an issue with my code or style though, as it wasn't working on the website I pulled the image from either.

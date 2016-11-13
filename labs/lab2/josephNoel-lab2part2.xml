@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PLAYLIST xmlns:xlink="http://www.w3.org/1999/xlink">
+	<SONG>
+		<TRACKNAME>This is Halloween</TRACKNAME>
+		<ARTIST>Marilyn Manson</ARTIST>
+		<ALBUM>
+			<ALBUMLINK xlink:type="simple" xlink:href="http://www.allmusic.com/album/nightmare-revisited-mw0000798327">
+				Nightmare Revisited
+			</ALBUMLINK>
+		</ALBUM>
+		<ALBUMCOVER>
+			<ALBUMART xlink:type="simple" xlink:href="http://cps-static.rovicorp.com/3/JPG_500/MI0001/790/MI0001790692.jpg?partner=allrovi.com">
+				Nightmare Revisited
+			</ALBUMART>
+		</ALBUMCOVER>
+		<RELEASEDATE>September 30, 2008</RELEASEDATE>
+		<GENRES>
+			<GENRE>Disney</GENRE>
+			<GENRE>Rock</GENRE>
+			<GENRE>Sondtrack</GENRE>
+		</GENRES>
+	</SONG>
+	<SONG>
+		<TRACKNAME>Heads Will Roll</TRACKNAME>
+		<ARTIST>Yeah Yeah Yeahs</ARTIST>
+		<ALBUM>
+			<ALBUMLINK xlink:type="simple" xlink:href="http://www.allmusic.com/album/its-blitz%21-mw0000813137">
+				It's Blitz!
+			</ALBUMLINK>
+		</ALBUM>
+		<ALBUMCOVER>
+			<ALBUMART xlink:type="simple" xlink:href="http://cps-static.rovicorp.com/3/JPG_500/MI0000/874/MI0000874209.jpg?partner=allrovi.com">
+				It's Blitz!
+			</ALBUMART>
+		</ALBUMCOVER>
+		<RELEASEDATE>June 29, 2009</RELEASEDATE>
+		<GENRES>
+			<GENRE>Alternative Dance</GENRE>
+			<GENRE>Danve-Punk</GENRE>
+			<GENRE>New Wave</GENRE>
+			<GENRE>Synthpop</GENRE>
+		</GENRES>
+	</SONG>
+	<SONG>
+		<TRACKNAME>Riptide</TRACKNAME>
+		<ARTIST>Vance Joy</ARTIST>
+		<ALBUM>
+			<ALBUMLINK xlink:type="simple" xlink:href="http://www.allmusic.com/album/dream-your-life-away-mw0002701765">
+				Dream Your Life Away
+			</ALBUMLINK>
+		</ALBUM>
+		<ALBUMCOVER>
+			<ALBUMART xlink:type="simple" xlink:href="http://cps-static.rovicorp.com/3/JPG_500/MI0003/769/MI0003769708.jpg?partner=allrovi.com">
+				Dream Your Life Away
+			</ALBUMART>
+		</ALBUMCOVER>
+		<RELEASEDATE>May 21, 2013</RELEASEDATE>
+		<GENRES>
+			<GENRE>Indie Folk</GENRE>
+			<GENRE>Indie Pop</GENRE>
+		</GENRES>
+	</SONG>
+	<SONG>
+		<TRACKNAME>Stressed Out</TRACKNAME>
+		<ARTIST>Twenty One Pilots</ARTIST>
+		<ALBUM>
+			<ALBUMLINK xlink:type="simple" xlink:href="http://www.allmusic.com/album/blurryface-mw0002837924">
+				Blurryface
+			</ALBUMLINK>
+		</ALBUM>
+		<ALBUMCOVER>
+			<ALBUMART xlink:type="simple" xlink:href="http://cps-static.rovicorp.com/3/JPG_500/MI0003/853/MI0003853980.jpg?partner=allrovi.com">
+				Blurryface
+			</ALBUMART>
+		</ALBUMCOVER>
+		<RELEASEDATE>April 28, 2015</RELEASEDATE>
+		<GENRES>
+			<GENRE>Rap</GENRE>
+			<GENRE>Rock</GENRE>
+		</GENRES>
+	</SONG>
+	<SONG>
+		<TRACKNAME>You're Gonna Go Far, Kid</TRACKNAME>
+		<ARTIST>The Offspring</ARTIST>
+		<ALBUM>
+			<ALBUMLINK xlink:type="simple" xlink:href="http://www.allmusic.com/album/rise-and-fall-rage-and-grace-mw0000787599">
+				Rise and Fall, Rage and Grace
+			</ALBUMLINK>
+		</ALBUM>
+		<ALBUMCOVER>
+			<ALBUMART xlink:type="simple" xlink:href="http://hwcdn.allmusic.com/release-covers/500/0000/983/0000983935.jpg">
+				Rise and Fall, Rage and Grace
+			</ALBUMART>
+		</ALBUMCOVER>
+		<RELEASEDATE>September 4, 2008</RELEASEDATE>
+		<GENRES>
+			<GENRE>Punk</GENRE>
+			<GENRE>Rock</GENRE>
+		</GENRES>
+	</SONG>
+	<SONG>
+		<TRACKNAME>I Will Wait</TRACKNAME>
+		<ARTIST>Mumford and Sons</ARTIST>
+		<ALBUM>
+			<ALBUMLINK xlink:type="simple" xlink:href="http://www.allmusic.com/album/babel-mw0002409657">
+				Babel
+			</ALBUMLINK>
+		</ALBUM>
+		<ALBUMCOVER>
+			<ALBUMART xlink:type="simple" xlink:href="http://cps-static.rovicorp.com/3/JPG_500/MI0003/447/MI0003447070.jpg?partner=allrovi.com">
+				Babel
+			</ALBUMART>
+		</ALBUMCOVER>
+		<RELEASEDATE>August 7, 2012</RELEASEDATE>
+		<GENRES>
+			<GENRE>Bluegrass</GENRE>
+			<GENRE>Country</GENRE>
+			<GENRE>Folk Rock</GENRE>
+			<GENRE>Indie Folk</GENRE>
+		</GENRES>
+	</SONG>
+</PLAYLIST>

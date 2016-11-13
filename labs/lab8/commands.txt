@@ -1,0 +1,74 @@
+7a.	SELECT rin FROM students
+7a-Out.	1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+
+7b.	SELECT `last name` FROM students
+7b-Out.	Noel
+		Kaplan
+		DiNicola
+		Markum
+		Prudente
+		Eaton
+		Morsches
+		Xu
+		Trump
+		Clinton
+
+7c.	SELECT rcsID FROM students
+7c-Out.	noelj
+		kaplaz
+		dinicc
+		markuc
+		prudep
+		eatonj
+		morscs
+		xul
+		trumpd
+		clintc
+
+7d.	SELECT `first name` FROM students
+7d-Out.	Joseph
+		Zackary
+		Christopher
+		Christopher
+		Dominick
+		Jack
+		Sarah
+		Lu
+		Donald
+		Hillary
+
+8.	SELECT students.`first name`, students.`last name` 
+	FROM students 
+	JOIN grades 
+	ON students.rin=grades.rin 
+	WHERE grades.grade >= 90
+8-Out.	Joseph Noel
+		Zackary Kaplan
+		Christopher Markum
+		Sarah Morsches
+		Lu Xu
+		Lu Xu
+		Christopher Markum
+		Dominick Prudente
+		Jack Eaton
+
+
+9.	SELECT SUM(grades.`grade`)/COUNT(grades.`grade`) 
+	FROM grades 
+	JOIN courses 
+	ON grades.crn=courses.crn 
+	WHERE courses.crn = 
+		(SELECT crn FROM courses ORDER BY crn ASC LIMIT 1 OFFSET 1)
+9-Out.	92.5000
+
+10.	SELECT COUNT(*) FROM `students`
+10-Out.	10

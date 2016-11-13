@@ -1,0 +1,98 @@
+img {
+	width:100px;
+	height:100px;
+}
+
+#playlist {
+	border: 5px double black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 1800px;
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+}
+
+.songInfo, #songInfoColumns {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	overflow: auto;
+}
+
+.songInfo li, #songInfoColumns li {
+	display: inline-block;
+	float: left;
+	width: 250px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 0;
+}
+
+#songInfoColumns {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#songInfoColumns li {
+	font-size: 2em;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+#songInfoColumns .albumCover {
+	float: right;
+}
+
+.trackName, .favoriteTrackName {
+	font-variant: small-caps;
+}
+
+.favoriteTrackName {
+	color:green;
+}
+
+.artist {
+	font-weight: bold;
+	font-size: 120%
+}
+
+.album {
+	font-style: italic;
+}
+
+li.albumCover {
+	float: right;
+}
+
+.releaseDate, .genre {
+	font-size: 80%;
+}
+
+.genreList {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	overflow: auto;
+}
+
+.genreList li {
+	display: inline-block;
+	float: left;
+	width: 200px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+ul.genreList > li:before {
+	content: "-";
+	text-indent: -5px;
+}
+
+
+#end {
+	font-size: .5em;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 20px;
+}

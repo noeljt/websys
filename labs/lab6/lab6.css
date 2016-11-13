@@ -1,0 +1,67 @@
+pre, form {
+	display: block;
+	width: 200px;
+	margin: 30px auto 10px auto;
+	border-radius: 50px;
+}
+
+#op1, #op2 {
+	border: none;
+	background-color: black;
+	padding: 0;
+	height: 25px;
+	color: white;
+	text-align: 
+}
+
+pre {
+	text-align: center;
+	height: 50px;
+	vertical-align: middle;
+	border: 1px solid black;
+	background-color: black;
+	padding: 0 10px;
+	position: relative;
+}
+
+.wrapper {
+	overflow: hidden;
+	width: 200px;
+	margin: 20px auto;
+}
+.left {
+	float: left;
+	width: 90px;
+}
+.right {
+	width: 90px;
+	float: right;
+}
+
+#inputs {
+	margin: 0 auto;
+}
+
+#calculator {
+	border: 1px solid black;
+	width: 300px;
+	padding: 10px;
+	border-radius: 50px;
+	background-color: red;
+	margin: auto;
+}
+
+#eq {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 150%;
+	height: 3.5em;
+}
+
+.button {
+	background-color: black;
+	color: white;
+}

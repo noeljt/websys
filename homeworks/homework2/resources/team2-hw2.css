@@ -1,0 +1,115 @@
+body {
+	background-image: url("background.jpeg");
+}
+
+#hexed {
+	width: 500px;
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 25px;
+	background-color: black;
+	border-radius: 100px;
+	box-shadow: 0 0 30px 30px #fff;
+}
+
+p, span {
+	width: 100px;
+	display: block !important;
+	margin: 10px auto;
+	text-align: center;
+	color: red;
+	text-shadow: 1px 1px #fff;
+}
+
+img {
+	width: 300px;
+	display: block;
+	margin: auto;
+}
+
+.ui-spinner-input {
+	text-align: center;
+	width: 80px;
+	color: red;
+	text-shadow: 1px 1px #fff;
+}
+
+.ui-spinner {
+	background-color: transparent;
+	color: transparent;
+	border: transparent !important;
+}
+
+.ui-spinner-button {
+	background-color: red;
+}
+
+.wrapper {
+	overflow: hidden;
+	width: 250px;
+	margin: 0 auto;
+}
+.left {
+	float: left;
+	width: 125px;
+}
+.right {
+	width: 125px;
+	float: right;
+}
+
+#newGame, #next, #check {
+	width: 100px;
+	display: block;
+	margin: 10px auto;
+	background-color: red;
+	color: white;
+}
+
+#Lcolor, #Rcolor {
+	width: 100px;
+	height: 100px;
+	margin: 10px auto;
+	border-radius: 10px;
+	border: 1px solid white;
+}
+
+#score, #total {
+	color: red;
+	text-shadow: 1px 1px #fff;
+	text-align: center;
+	font-size: 150%;
+}
+
+.desc {
+	font-size: 150%
+}
+
+.ui-slider {
+	background-color: transparent;
+}
+
+#red .ui-slider-range, #red .ui-slider-handle {
+	background-color: red;
+}
+
+#green .ui-slider-range, #green .ui-slider-handle {
+	background-color: green;
+}
+
+#blue .ui-slider-range, #blue .ui-slider-handle {
+	background-color: blue;
+}
+
+#red, #blue, #green {
+	margin: 10px auto;
+	width: 350px;
+}
+
+#red .ui-slider-handle, #green .ui-slider-handle, #blue .ui-slider-handle {
+	margin:0;
+}

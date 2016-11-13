@@ -47,10 +47,10 @@
                 <a href="#services" onclick=$("#menu-close").click();>Links</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+                <a href="#labsection" onclick=$("#menu-close").click();>Labs</a>
             </li>
             <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+                <a href="#hwsection" onclick=$("#menu-close").click();>Homeworks</a>
             </li>
         </ul>
     </nav>
@@ -113,7 +113,7 @@
                                     <strong>Labs</strong>
                                 </h4>
                                 <p>Web Systems Development labs</p>
-                                <a href="#portfolio" class="btn btn-light">Learn More</a>
+                                <a href="#labbsection" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
@@ -126,7 +126,7 @@
                                     <strong>Homework</strong>
                                 </h4>
                                 <p>Web Systems Development homeworks</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="#hwsection" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
         <!-- /.container -->
     </section>
 
-    <!-- Countdown -->
+    <!-- Progress Bar -->
     <aside class="callout overlay">
         <div class="text-vertical-center">
             <h1 id="grad_title">Graduation Progress</h1>
@@ -147,45 +147,14 @@
         </div>
     </aside>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <!-- Labs Section -->
+    <section id="labsection" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2>Labs</h2>
                     <hr class="small">
-                    <div id="labs" class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="resources/img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="resources/img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="resources/img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="resources/img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
+                    <div id="labs" class="row"></div>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -206,6 +175,21 @@
             </div>
         </div>
     </aside>
+
+    <section id="hwsection" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Homeworks</h2>
+                    <hr class="small">
+                    <div id="hws" class="row"></div>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
     <!-- Map -->
     <section id="contact" class="map">

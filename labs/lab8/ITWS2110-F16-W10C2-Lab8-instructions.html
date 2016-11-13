@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Web Sys I - Fall 2016 - Lab #8 - SQL</title>
+   <style type="text/css">
+
+      /*I have included the css here for convenience only*/
+
+      body {
+         font-family: helvetica;
+         width: 900px;
+      }
+
+      #mainBlock{
+         width:700px;
+         background-color: #fee;
+         padding:30px;
+         float: right;
+         clear: both;
+         overflow: hidden;
+      } 
+      
+      .sectiondetail {
+         list-style-type: none;
+      }
+
+      .noteThis {
+         color:red;
+         font-size:110%;
+      }
+      .minor {
+         line-height: 90% !important;
+         font-size:90% !important;
+         border-style: solid;
+         border-color: red;
+         padding:5px;
+         text-align: left;
+         width: 80%;
+      }
+      strong {
+         font-size: 105%;
+      }
+
+      em {
+         color:green;
+      }
+      
+      table {
+         display: inline-table;
+      }
+
+      .rubcat {
+         -webkit-column-width: 100px;
+         -moz-column-width: 100px;
+         column-width: 100px;
+      }
+
+      .rubpts {
+         -webkit-column-width: 40px;
+         -moz-column-width: 40px;
+         column-width: 40px;
+      }
+
+
+
+   </style>
+</head>
+<body>
+   <div id="mainBlock">
+      <h1>Lab #8 - SQL</h1>
+      <ul id="sections">
+         <li class="sectionheader">
+            Part 0
+         </li>
+         <li class="sectiondetail">
+            <ul class="subsections">
+               <li class="subsectiondetail">
+                  Create a new folder for Lab 8 in your websys folder.  Add an entry into your menu file so that it is available as an item on your page&apos;s menu.
+               </li>
+            </ul>
+         </li>
+         <li class="sectionheader">
+            Part 1
+         </li>
+         <li class="sectiondetail">
+            <ul class="subsections">
+              <li class="subsectiondetail">
+                in phpmyadmin or the command line: Create a database named <em>websyslab8</em>. 
+             </li>
+             <li class="subsectiondetail">
+              Create a table named <em>courses</em>.  It should contain
+              <ul>
+                <li>crn (int 11, primary key)</li>
+                <li>prefix (varchar 4, not null)</li>
+                <li>number (smallint 4, not null)</li>
+                <li>title (varchar 255, not null)</li>
+                <li>collate should be <strong>utf8_unicode_ci</strong></li>
+             </ul>
+          </li>
+          <li class="subsectiondetail">
+           Create a table named <em>students</em>.  It should contain
+           <ul>
+             <li>rin (int 9, primary key)</li>
+             <li>rcsID (char 7)</li>
+             <li>first name (varchar 100, not null)</li>
+             <li>last name (varchar 100, not null)</li>
+             <li>alias (varchar 100, not null)</li>
+             <li>phone (int 10)</li>
+             <li>collate should be <strong>utf8_unicode_ci</strong></li>
+          </ul>
+       </li>
+    </ul>
+ </li>
+ <li class="sectionheader">
+   Part 2
+</li>
+<li class="sectiondetail">
+   <ul class="subsections">
+      <li class="subsectiondetail">
+         Using these tables, perform the following:
+         <ol>
+           <li>Add address fields (street, city, st, zip) to the students table</li>
+           <li>Add section and year fields to the courses table</li>
+           <li>CREATE a grades table containing
+             <ul>
+               <li>id (int primary key, auto increment)</li>
+               <li>crn (foreign key)</li>
+               <li>rin (foreign key)</li>
+               <li>grade (int 3 not null)</li>
+            </ul>
+         </li>
+         <li>INSERT at least 10 courses into the courses table</li>
+         <li>INSERT at least 10 students into the students table</li>
+         <li>ADD 20 grades into the grades table</li>
+         <li>list all students&apos; data in the following sequences; 
+         <ul>
+          <li>by rin,</li> 
+          <li>last name,</li>
+          <li>RCSid, and</li>
+          <li>firstname</li>
+         </ul>
+         <li>list all students first name and last name if their grade in any course was higher than a 90 (make sure at least one person fits the criterion</li>
+         <li>list out the average grade in the second course</li>
+         <li>list out the number of students</li>
+      </ol>
+      
+      
+   </li>
+</ul>
+</li>
+<li class="sectionheader">
+   Receiving credit
+</li>
+<li class="sectiondetail">
+   <ul class="subsections">
+   <li class="subsectiondetail">
+      Export the structure and content of your database and tables to a text file using phpmyadmin. place them in your lab8 folder. 
+   </li>
+      <li class="subsectiondetail">
+         After entering each command to the SQL server (via phpmyadmin or command line), copy your command and output and paste into a text document after an entry for each question number and description.  Place this document in the lab7 folder as well.
+      </li>
+      <li>
+       As normal, there should be a <strong>readme</strong> file included which explains your observations/comments/assumptions from this lab.
+    </li>
+    <li>
+       commit your website changes to your repo from lab 7 
+    </li>
+ </ul>
+</li>
+<li class="sectionheader">
+   Submission
+</li>
+<li class="sectiondetail">
+   <ul class="subsections">
+      <li class="subsectiondetail">
+         <strong>Zip</strong> up your lab 8 folder ...
+      </li>
+      <li class="subsectiondetail">
+         Rename it to <strong>websyslab8-<em>yourname</em>-<em>yourRCSID</em>.zip</strong>
+      </li>
+      <li class="subsectiondetail">
+         <strong>Submit</strong> it to LMS
+      </li>
+   </ul>
+</li>
+<li class="sectionheader">
+   Rubric/Grading
+</li>
+<li class="sectiondetail">
+   <ul class="subsections">
+      <li class="subsectiondetail">
+         <table>
+            <tr>
+               <td class="rubcat">Part 1</td>
+               <td class="rubpts">10 Points</td>
+            </tr>
+         </table>                   
+      </li>
+      <li class="subsectiondetail">
+         <table>
+            <tr>
+               <td class="rubcat">Part 2</td>
+               <td class="rubpts">20 Points</td>
+            </tr>
+         </table>  
+      </li>
+   </ul>
+</li>           
+</ul>
+</div>
+</body>
+</html>

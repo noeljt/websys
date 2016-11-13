@@ -1,0 +1,30 @@
+TRACKNAME, ARTIST, ALBUM, ALBUMCOVER, RELEASEDATE, GENRE {
+	display: block;
+	float: left;
+	clear: left;
+	border-bottom: solid black 1px;
+	width: 300px;
+}
+
+TRACKNAME {
+	font-size: 80%;
+	border-top: solid black 1px;
+}
+
+ARTIST {
+	color: blue;
+}
+
+ALBUM {
+	font-style: italic;
+}
+
+ALBUMCOVER {
+	margin-bottom: 1em;
+	border-bottom: none;
+}
+
+img {
+	height: 100px;
+	width: 100px;
+}
