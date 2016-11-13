@@ -42,7 +42,7 @@ function loadData(data) {
 		desc = labs[i].getElementsByTagName("desc")[0].childNodes[0].nodeValue;
 		url = labs[i].getElementsByTagName("url")[0].childNodes[0].nodeValue;
 		img = labs[i].getElementsByTagName("img")[0].childNodes[0].nodeValue;
-		html_labs.push("<div class='col-md-6'><div class='portfolio-item'><a href='"+url+"'><img class='img-portfolio img-responsive' src=" + img + "></a><h3>"+desc+"</h3></div></div>");
+		html_labs.push("<div class='col-md-6'><div class='portfolio-item'><a href='"+url+"'><img class='img-portfolio img-responsive' alt='" + name + "' src='" + img + "'></a><h3>"+desc+"</h3></div></div>");
 	}
 	for (i=0;i<hws.length;i++) {
 		var name, desc, url;
@@ -50,7 +50,7 @@ function loadData(data) {
 		desc = hws[i].getElementsByTagName("desc")[0].childNodes[0].nodeValue;
 		url = hws[i].getElementsByTagName("url")[0].childNodes[0].nodeValue;
 		img = hws[i].getElementsByTagName("img")[0].childNodes[0].nodeValue;
-		html_hws.push("<div class='col-md-6'><div class='portfolio-item'><a href='"+url+"'><img class='img-portfolio img-responsive' src=" + img + "></a><h3>"+desc+"</h3></div></div>");
+		html_hws.push("<div class='col-md-6'><div class='portfolio-item'><a href='"+url+"'><img class='img-portfolio img-responsive' alt='" + name + "'' src='" + img + "'></a><h3>"+desc+"</h3></div></div>");
 	}
 
 	$("#labs").append(html_labs.join(""));
