@@ -20,11 +20,15 @@
 }
 
 #progressBar {
-	margin: 10%;
+	margin: 0 10%;
 }
 
 .ui-progressbar-value {
-	transition: width 0.5s;
-	-webbkit-transitionn: width 0.5s;
 	background-color: #001C38;
+}
+
+#grad_title {
+	margin: 50px auto;
+	color: white;
+	text-shadow: 2px 2px black;
 }
