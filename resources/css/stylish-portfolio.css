@@ -98,12 +98,11 @@ hr.small {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999;
+    color: #fff;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
     background: rgba(255,255,255,0.2);
 }
 
@@ -114,16 +113,14 @@ hr.small {
 
 .sidebar-nav > .sidebar-brand {
     height: 55px;
-    font-size: 18px;
     line-height: 55px;
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999;
+    color: #fff;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
     background: none;
 }
 

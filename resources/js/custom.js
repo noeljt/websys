@@ -28,16 +28,12 @@ var data = new XMLHttpRequest();
 data.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
 		loadData(this);
-		console.log("loaded");
-	} else {
-		console.log("failure " + this.status);
 	}
 }
 data.open("GET", "resources/data.xml", true);
 data.send();
 
 function loadData(data) {
-	console.log("loadData");
 	var xmlDoc = data.responseXML;
 	var xml = xmlDoc.documentElement.childNodes;
 	var labs = xmlDoc.getElementsByTagName("lab");
@@ -63,5 +59,4 @@ function loadData(data) {
 
 	$("#labs").append(html_labs.join(""));
 	$("#hws").append(html_hws.join(""));
-	console.log("append");
 }

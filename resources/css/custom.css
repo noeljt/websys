@@ -33,6 +33,20 @@
 	text-shadow: 2px 2px black;
 }
 
-.callout > .text-vertical-center {
-	/*background-color: rgba(0,28,56,0.3);*/
+#hwsection {
+	background-color: #001C38;
+	color: white;
+}
+
+#sidebar-wrapper {
+	background-color: rgba(34,34,34,0.75);
+	font-size: 150%;
+}
+
+.fa-times {
+	color: white;
+}
+
+#menu-close {
+	background: inherit;
 }
