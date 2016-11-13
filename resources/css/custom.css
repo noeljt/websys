@@ -1,5 +1,5 @@
 #main_title {
-    background-color: rgba(255,255,255,0.35);
+  background-color: rgba(255,255,255,0.35);
 }
 
 #main_title > h3 { 
@@ -31,4 +31,8 @@
 	margin: 50px auto;
 	color: white;
 	text-shadow: 2px 2px black;
+}
+
+.callout > .text-vertical-center {
+	/*background-color: rgba(0,28,56,0.3);*/
 }
