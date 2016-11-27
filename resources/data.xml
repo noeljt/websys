@@ -57,8 +57,8 @@
 	</lab>
 	<lab>
 		<name>lab10</name>
-		<desc>Future lab</desc>
-		<url>/labs/lab10</url>
+		<desc>Try out PostgreSQL</desc>
+		<url>/labs/lab10/index.php</url>
 		<img>/resources/img/lab10.png</img>
 	</lab>
 
