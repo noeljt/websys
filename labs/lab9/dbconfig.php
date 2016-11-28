@@ -3,7 +3,7 @@
 $config = array(
    'DB_HOST'     => 'localhost',
    'DB_USERNAME' => 'root',
-   'DB_PASSWORD' => 'yawnedge',
+   'DB_PASSWORD' => 'root',
 );
 
 $sql1 = "CREATE DATABASE `noelj-websyslab9`;
