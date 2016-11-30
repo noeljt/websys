@@ -1,0 +1,72 @@
+body {
+	width: 100%;
+}
+
+#wrapper {
+	width: 500px;
+	margin: auto;
+	background-color: red;
+}
+#wrapper::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.header {
+	width: 500px;
+	background-color: blue;
+	float: left;
+}
+h1 {
+	text-align: center;
+	margin: 20px;
+	color: white;
+	text-shadow: 2px 2px red;
+}
+.header::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+input {
+	width: 100px;
+	height: 100px;
+	white-space: normal;
+	word-wrap: break-word;
+	padding: 0;
+	border: 1px solid black;
+	margin: 20px 0 20px 20px;
+	float: left;
+	border-radius: 50px;
+}
+
+#results {
+	width: 500px;
+	float: left;
+}
+
+.status, .done, .error {
+	color: yellow;
+	text-shadow: 1px 1px white;
+	font-weight: bold;
+	font-size: 150%;
+	text-align: center;
+	margin: 20px;
+}
+
+.done {
+	color: green;
+	margin-top: 0;
+}
+
+.error {
+	color: white;
+	text-shadow: none;
+}
+
+table {
+	margin: auto;
+	margin-bottom: 10px;
+}

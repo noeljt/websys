@@ -1,0 +1,183 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.2
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Nov 29, 2016 at 12:11 AM
+-- Server version: 10.1.16-MariaDB
+-- PHP Version: 5.6.24
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `noelj-websyslab9`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `courses`
+--
+
+CREATE TABLE `courses` (
+  `crn` int(11) NOT NULL,
+  `prefix` varchar(4) COLLATE utf8_unicode_ci NOT NULL,
+  `number` smallint(4) NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `section` smallint(2) NOT NULL,
+  `year` smallint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- RELATIONS FOR TABLE `courses`:
+--
+
+--
+-- Dumping data for table `courses`
+--
+
+INSERT INTO `courses` (`crn`, `prefix`, `number`, `title`, `section`, `year`) VALUES
+(0, 'CSCI', 0, 'Computer Science', 1, 2017),
+(1, 'CSCI', 1, 'Data Structures', 1, 2017),
+(2, 'CSCI', 2, 'Foundations of Computer Science', 1, 2017),
+(3, 'CSCI', 3, 'Intro to Algorithms', 1, 2017),
+(4, 'CSCI', 4, 'Computer Organization', 1, 2017),
+(5, 'ITWS', 5, 'Intro to IT', 2, 2016),
+(6, 'ITWS', 6, 'Intro to HCI', 2, 2016),
+(7, 'ITWS', 7, 'Web Systems Development', 2, 2016),
+(8, 'ITWS', 8, 'IT and Society', 2, 2016),
+(9, 'ITWS', 9, 'Managing IT Resources', 2, 2016);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `grades`
+--
+
+CREATE TABLE `grades` (
+  `id` int(11) NOT NULL,
+  `crn` int(11) NOT NULL,
+  `rin` int(11) NOT NULL,
+  `grade` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- RELATIONS FOR TABLE `grades`:
+--   `crn`
+--       `courses` -> `crn`
+--   `rin`
+--       `students` -> `rin`
+--
+
+--
+-- Dumping data for table `grades`
+--
+
+INSERT INTO `grades` (`id`, `crn`, `rin`, `grade`) VALUES
+(21, 9, 7, 46),
+(22, 6, 9, 55),
+(23, 7, 9, 75),
+(24, 3, 6, 99),
+(25, 8, 5, 100),
+(26, 9, 9, 59),
+(27, 2, 8, 32),
+(28, 1, 5, 58),
+(29, 5, 2, 100),
+(30, 0, 1, 100),
+(31, 8, 3, 100),
+(32, 7, 5, 73),
+(33, 7, 7, 44),
+(34, 3, 2, 79),
+(35, 7, 3, 100),
+(36, 0, 3, 100),
+(37, 0, 5, 58),
+(38, 2, 7, 79),
+(39, 2, 3, 92),
+(40, 2, 9, 100),
+(41, 3, 7, 85),
+(42, 8, 1, 77),
+(43, 2, 0, 48),
+(44, 7, 1, 48),
+(45, 9, 2, 100),
+(46, 5, 2, 95);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `students`
+--
+
+CREATE TABLE `students` (
+  `rin` int(9) NOT NULL,
+  `rcisID` char(7) COLLATE utf8_unicode_ci NOT NULL,
+  `first name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `last name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `alias` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `phone` int(10) NOT NULL,
+  `street` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `city` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `st` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `zip` int(6) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- RELATIONS FOR TABLE `students`:
+--
+
+--
+-- Dumping data for table `students`
+--
+
+INSERT INTO `students` (`rin`, `rcisID`, `first name`, `last name`, `alias`, `phone`, `street`, `city`, `st`, `zip`) VALUES
+(0, 'noelj', 'Joseph', 'Noel', 'Joe', 0, '0 First Street', 'Troy', 'NY', 0),
+(1, 'noelm', 'Michael', 'Noel', 'Mike', 1, '1 Second Ave', 'NYC', 'NY', 1),
+(2, 'noels', 'Sara', 'Noel', '', 2, '2 Third Circle', 'Boston', 'MA', 2),
+(3, 'salzm', 'Michelle', 'Salz', '', 3, '3 Fourth Place', 'Cheshire', 'CT', 3),
+(4, 'noelp', 'Philip', 'Noel', 'Phil', 4, '4 Fifth Alley', 'Cheshire', 'CT', 4),
+(5, 'noelr', 'Roland', 'Noel', '', 5, '5 Sixth Way', 'Gabriel', 'NA', 5),
+(6, 'salzd', 'Doug', 'Salz', '', 6, '6 Seventh Pass', 'Tampa', 'FL', 6),
+(7, 'noelw', 'William', 'Noel', 'Bill', 7, '7 Eighth Lane', 'Malboro', 'MA', 7),
+(8, 'salzb', 'Brenda', 'Salz', '', 8, '8 Ninth Boulevard', 'Monroe', 'NJ', 8),
+(9, 'salza', 'Albert', 'Salz', 'Al', 9, '9 Tenth Court', 'Lucas', 'NA', 9);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `courses`
+--
+ALTER TABLE `courses`
+  ADD PRIMARY KEY (`crn`);
+
+--
+-- Indexes for table `grades`
+--
+ALTER TABLE `grades`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `students`
+--
+ALTER TABLE `students`
+  ADD PRIMARY KEY (`rin`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `grades`
+--
+ALTER TABLE `grades`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
